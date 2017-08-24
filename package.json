@@ -1,0 +1,19 @@
+{
+  "name": "intro-to-node",
+  "version": "1.0.0",
+  "description": "Intro to node project",
+  "main": "callback.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mstallmo/intro-to-node.git"
+  },
+  "author": "Mason Stallmo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mstallmo/intro-to-node/issues"
+  },
+  "homepage": "https://github.com/mstallmo/intro-to-node#readme"
+}
