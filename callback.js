@@ -14,22 +14,27 @@ let evenDoubler = function(v, callback){
     }
 };
 
-let count = 0;
+let handleResults = function (err, results, time ) {
+    if (err) {
+        console.log("Error: " + err.message);
+    }
+    else {
+        console.log("The results are: " + results + " (" + time + " ms)");
+    }
+};
 
-for (let i = 0; i < 10; ++i) {
-    console.log("Calling evenDoubler for value " + i);
-    evenDoubler(i, function(err, results, time) {
-        if (err) {
-            console.log("Error: " + err.message);
-        }
-        else {
-            console.log("The results are: " + results + " ("+ time + " ms");
-        }
+(function () {
+    let count = 1;
+    for (let i = 0; i < 10; ++i) {
+        console.log("Calling evenDoubler for value " + i);
+
+        evenDoubler(i, handleResults);
 
         if (++count === 10) {
             console.log("Done!");
         }
-    });
-}
+    }
+}());
+
 
 console.log("------");
