@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/mstallmo/intro-to-node#readme",
   "dependencies": {
+    "mocha": "^3.5.0",
     "request": "^2.81.0",
+    "should": "^11.2.1",
     "socket.io": "^2.0.3"
   }
 }
